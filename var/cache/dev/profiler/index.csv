@@ -1,0 +1,4 @@
+8992ad,127.0.0.1,GET,http://localhost/syfmony/projet1/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DINITPlatformBundle%253ADefault%253AnavbarHeader,1461969058,e4a44a,200
+5dda88,127.0.0.1,GET,http://localhost/syfmony/projet1/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DINITPlatformBundle%253ADefault%253AnavbarDefault,1461969058,e4a44a,200
+e4a44a,127.0.0.1,GET,http://localhost/syfmony/projet1/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DINITPlatformBundle%253ADefault%253Anavbar,1461969058,52c166,200
+52c166,::1,GET,http://localhost/syfmony/projet1/web/app_dev.php/,1461969059,,200

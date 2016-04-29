@@ -1,0 +1,4 @@
+services:
+#    init_platform.example:
+#        class: INIT\PlatformBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

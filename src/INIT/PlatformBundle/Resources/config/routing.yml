@@ -1,0 +1,6 @@
+init_platform_homepage:
+    path:     /
+    defaults: { _controller: INITPlatformBundle:Default:index }
+hello_world_homepage:
+    path:     /hello-world
+    defaults: { _controller: INITPlatformBundle:Default:helloWorld }
