@@ -4,3 +4,6 @@ init_platform_homepage:
 hello_world_homepage:
     path:     /hello-world
     defaults: { _controller: INITPlatformBundle:Default:helloWorld }
+init_platform_annonces_index:
+    path:   /annonces
+    defaults: { _controller: INITPlatformBundle:Annonces:index }
