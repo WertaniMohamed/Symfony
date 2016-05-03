@@ -100,6 +100,15 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // annonces_product_homepage
+        if (rtrim($pathinfo, '/') === '/product') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'annonces_product_homepage');
+            }
+
+            return array (  '_controller' => 'Annonces\\ProductBundle\\Controller\\DefaultController::indexAction',  '_route' => 'annonces_product_homepage',);
+        }
+
         // init_platform_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
@@ -112,6 +121,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // hello_world_homepage
         if ($pathinfo === '/hello-world') {
             return array (  '_controller' => 'INIT\\PlatformBundle\\Controller\\DefaultController::helloWorldAction',  '_route' => 'hello_world_homepage',);
+        }
+
+        // init_platform_annonces_index
+        if ($pathinfo === '/annonces') {
+            return array (  '_controller' => 'INIT\\PlatformBundle\\Controller\\AnnoncesController::indexAction',  '_route' => 'init_platform_annonces_index',);
         }
 
         // homepage

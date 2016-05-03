@@ -41,6 +41,11 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             return array (  '_controller' => 'INIT\\PlatformBundle\\Controller\\DefaultController::helloWorldAction',  '_route' => 'hello_world_homepage',);
         }
 
+        // init_platform_annonces_index
+        if ($pathinfo === '/annonces') {
+            return array (  '_controller' => 'INIT\\PlatformBundle\\Controller\\AnnoncesController::indexAction',  '_route' => 'init_platform_annonces_index',);
+        }
+
         // homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

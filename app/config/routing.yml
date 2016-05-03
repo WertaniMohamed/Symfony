@@ -1,3 +1,7 @@
+annonces_product:
+    resource: "@AnnoncesProductBundle/Resources/config/routing.yml"
+    prefix:   /product/
+
 init_platform:
     resource: "@INITPlatformBundle/Resources/config/routing.yml"
     prefix:   /
